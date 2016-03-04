@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript"
+               src="formChecker.js">
+    </script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta charset="utf-8">
+<title>Web Store</title>
+</head>
+
+<body>
+
+    <p id="para1"><b>Welcome to my Magic Beans Shop!</b></p><br /><br />
+
+
+<form onsubmit="return Validate(this);" action="customerBackend.php" method="post">
+    <p id="para3">Please Enter a Username in the form of email and a password.</p><br />
+    <input type="email" id="username" name="user_name" /><br />
+    <input type="password" id="pass" name="pass_word" /><br /><br />
+
+    <p id="para3">Enter the Number of Beans in each field that you would like to purchase.</p><br />
+
+    <p id="para2">Red Beans $32</p><br />
+    <input type="number" min="0" name="red_beans" value="0" /><br />
+	<p id="para2">Blue Beans $13</p><br />
+    <input type="number" min="0" name="blue_beans" value="0" /><br />
+	<p id="para2">Rainbow Beans $42</p><br />
+
+    <input type="number" min="0" name="rainbow_beans" value="0" /><br />
+
+<ul>
+
+    <li><input type="radio" name="ship" id="a" value="Seven_Day" />
+    <label for="a">Free Seven Day Shipping</label></li>
+    <li><input type="radio" name="ship" id="b" value="Three_Day" />
+    <label for="a">$5.00 Three Day Shipping</label></li>
+    <li><input type="radio" name="ship" id="c" value="OverNight" />
+    <label for="a">$50.00 Overnight Shipping</label></li>
+</ul>
+
+    <input type="submit" />
+    <input type="reset" />
+</form>
+
+<p id="p1"></p>
+
+</body>
+</html>
